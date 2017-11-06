@@ -1,0 +1,100 @@
+
+body {
+    font-family: Verdana;
+}
+
+.navbar-inverse {
+    background-color: #004358;
+    font-size: 14px;
+}
+
+    .navbar-inverse .navbar-brand {
+        padding: 20px 40px;
+        color: #FFE11A;
+        font-size: 30px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 20px 15px;
+        color: #FFE11A;
+    }
+
+.navbar-header {
+    min-width: 0;
+    background-color: #004358;
+}
+
+.navbar-inverse .navbar-nav > li > button {
+    background: #1F8A70;
+    color: #FFE11A;
+    border-color: none !important;
+}
+
+    .navbar-inverse .navbar-nav > li > button:hover {
+        background: #004358;
+        color: white;
+        transition-duration: 0.5s;
+    }
+
+.navbar-nav > li > .dropdown-menu,
+.open > .dropdown-menu {
+    background-color: #004358;
+    border: none;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    color: #FFE11A;
+}
+
+.footer {
+    background-color: #004358;
+    color: #FFE11A;
+    position: relative;
+    bottom: 0;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+    .footer .col-md-12 {
+        background-color: #004358;
+    }
+
+    .footer ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+        .dropdown-menu > li > a,
+        .footer ul li a {
+            color: #FFE11A;
+        }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    max-width: 150px;
+    margin: auto;
+}
+
+    .img-responsive.logo-hutech {
+        top: -30px;
+        position: relative;
+    }
+
+.btn-fixed {
+    position: fixed;
+    z-index: 3;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #FFE11A;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer .col-md-2 a img.img-responsive.logo-hutech {
+        top: 0px;
+        position: initial;
+    }
+
+    .footer .col-md-2, .footer .col-md-3 {
+        text-align: center;
+    }
+}

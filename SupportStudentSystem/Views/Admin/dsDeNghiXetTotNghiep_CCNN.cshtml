@@ -1,0 +1,66 @@
+﻿@using SupportStudentSystem.Models;
+@using PagedList.Mvc;
+@model PagedList.PagedList<SupportStudentSystem.Models.DonDeNghiXetTotNghiep>
+
+@{
+    ViewBag.Title = "dsDeNghiXetTotNghiep_CCNN";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center">DANH SÁCH SINH VIÊN ĐỀ NGHỊ XÉT TỐT NGHIỆP</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DonTuID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CCTAID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SoHieu_CCTA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SoVaoSo_CCTA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NgayCap_CCTA)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonTuID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CCTAID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoHieu_CCTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoVaoSo_CCTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayCap_CCTA)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount;
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, Page => Url.Action("dsDeNghiXetTotNghiep_CCNN", new { Page = Page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>

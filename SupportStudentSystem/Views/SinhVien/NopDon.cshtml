@@ -1,0 +1,659 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hệ thống tư vấn học tập trực tuyến</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="/Scripts/Layout/layout.css" rel="stylesheet" />
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="/assets/js/core/libraries/jquery.min.js"></script>
+
+    <script src="/Scripts/blockui.min.js"></script>
+    <script src="/Scripts/XuLy/XuLyMenu.js"></script>
+    <script src="/Scripts/header.js"></script>
+
+    <script type="text/javascript" src="/assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="/assets/js/plugins/notifications/pnotify.min.js"></script>
+    <script type="text/javascript" src="/assets/js/plugins/ui/prism.min.js"></script>
+    <script type="text/javascript" src="/assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="/assets/js/core/app.js"></script>
+    <script type="text/javascript" async>
+        var user = 'L&#234; Ngọc Phương Trinh';
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/Home/TrangChu">HUTECH</a>
+            <ul class="nav navbar-nav pull-right visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-paragraph-justify3"></i></a></li>
+
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+
+
+
+            <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="_Home_TrangChu_GET_HUTECH__Home__GET_TH&#212;NG B&#193;O_aea40915-2dcb-41b7-846e-5c96475ded54">TH&#212;NG B&#193;O <span class="icon-arrow-down22"></span></a>    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown"><a href="/Home/ThongBao" id="_Home_TrangChu_GET_HUTECH__Home__GET_TH&#212;NG B&#193;O_aea40915-2dcb-41b7-846e-5c96475ded54_Home_ThongBao_GET_TH&#212;NG B&#193;O CHUNG_">TH&#212;NG B&#193;O CHUNG </a></li>
+                        <li class="dropdown"><a href="/Home/ThongBaoCaNhan" id="_Home_TrangChu_GET_HUTECH__Home__GET_TH&#212;NG B&#193;O_aea40915-2dcb-41b7-846e-5c96475ded54_Home_ThongBaoCaNhan_GET_TH&#212;NG B&#193;O C&#193; NH&#194;N_">TH&#212;NG B&#193;O C&#193; NH&#194;N </a></li>
+                    </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li><a href="/BieuDo/XuLy" id="btn-CTDT">SƠ ĐỒ HỌC TẬP</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="/TuVan/TuVan" id="btn-TuVan">TƯ VẤN HỌC TẬP</a></li>
+                <li class="divider-vertical"></li>
+                <li><a href="/SinhVien/NopDon" id="_Home_TrangChu_GET_HUTECH_/SinhVien/NopDon_Home__GET_NỘP ĐƠN TRỰC TUYẾN_">NỘP ĐƠN TRỰC TUYẾN</a></li>
+            </ul>
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav" style="padding:7px 0">
+                    <li class="dropdown dropdown-user">
+                        <form action="/DangNhap/DangXuat" class="navbar-form navbar-right" id="logoutForm" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="1g3EiAaRR07XBw3w6YQXLb77ZE1VcMNohCgeMSJ1YhGPqStHc4j4pvl9drfgeq1uRBaSYzJOio7GAtCJuaQDMUCum5cAq7mQ32YVW6GQ6BY12ODei1YwOsX9Dmm_bTwuBY8ZQtHqchSbDnxhGSVqzg2" />                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                <img style="border:solid 2px white;min-height:38px;" src="/Images/GetImage" alt="error">
+                                <span style="color:#FFE11A">L&#234; Ngọc Phương Trinh </span>
+                                <i style="color:#FFE11A" class="caret"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="/TuVan/ThongTinSV"><i class="icon-user-plus"></i> Thông tin cá nhân</a></li>
+                                <li><a id="dang-xuat"><i class="icon-switch2"></i>Đăng xuất</a></li>
+                            </ul>
+                        </form>
+                        <script>
+                                $('#btn-feedback').css('display', 'none');
+                        </script>
+                        <script>
+                            $('#dang-xuat').click(function () {
+                                $('#logoutForm').submit();
+                            });
+                        </script>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="btn-fixed" style="bottom:120px;right:15px;">
+            <button id="btn-top" style="display:none;" type="button" data-toggle="popover" title="Lên đầu trang" class="btn btn-icon btn-rounded text-white bg-danger"><i class="icon-arrow-up7"></i></button>
+            <script>
+                function scrolltop() {
+                    var id_button = '#btn-top';
+                    var offset = 220;
+                    var duration = 500;
+                    jQuery(window).scroll(function () {
+                        if (jQuery(this).scrollTop() > offset) {
+                            jQuery(id_button).fadeIn(duration);
+                        } else {
+                            jQuery(id_button).fadeOut(duration);
+                        }
+                    });
+                    jQuery(id_button).click(function (event) {
+                        event.preventDefault();
+                        jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                        return false;
+                    });
+                }
+                scrolltop();
+            </script>
+        </div>
+        <div class="btn-fixed" style="bottom:75px;right:15px;">
+            <a href="/" data-toggle="popover" title="Về trang chủ" class="btn btn-icon text-white bg-blue btn-rounded"><i class="icon-home2"></i></a>
+        </div>
+        <div class="btn-fixed" style="bottom:30px;right:15px;">
+            <button id="btn-feedback" type="button" data-toggle="modal" data-target="#feedback-modal" title="Phản hồi" class="btn btn-icon text-white bg-blue btn-rounded"><i class="icon-star-full2"></i></button>
+        </div>
+        <div id="feedback-modal" class="modal fade">
+            <script type="text/javascript" src="/assets/js/plugins/notifications/pnotify.min.js"></script>
+            <script type="text/javascript" src="/assets/js/plugins/notifications/noty.min.js"></script>
+            <script type="text/javascript" src="/assets/js/plugins/notifications/jgrowl.min.js"></script>
+            <script type="text/javascript" src="/assets/js/core/app.js"></script>
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content no-border-radius">
+                    <div class="modal-header bg-indigo">
+                        <h5 class="modal-title">Ý kiến phản hồi</h5>
+                    </div>
+                    <div class="modal-body">
+                        <textarea id="feedback-content" class="form-control" cols="2" data-toggle="popover" data-trigger="focus" title="Nhập nội dung cần phản hồi"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Đóng</button>
+                        <button type="button" id="submit-feedback" class="btn btn-primary">Gửi</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+    $('#submit-feedback').click(function () {
+        var content = $('#feedback-content').val().trim();
+        var notes = [];
+        notes['error'] = 'Bạn cần nhập nội dung phản hồi trước khi gởi.';
+        notes['success'] = 'Cám ơn ý kiến phản hồi của bạn, chúng tôi sẽ xem xét nội dụng bạn đã gởi.';
+        if (content != '') {
+            $.ajax({
+                type: 'post',
+                url: '/Feedback/Index',
+                data: { content: content },
+                success: function (data) {
+                    if (data == true) {
+                        $('#feedback-content').val('');
+                        $('#feedback-modal').modal('hide');
+                        noty({
+                            width: 200,
+                            text: notes['success'],
+                            type: 'success',
+                            dismissQueue: true,
+                            timeout: 4000,
+                        });
+                    }
+                    else {
+                        alert("Bạn cần đăng nhập để phản hồi");
+                    }
+                }
+            });
+        }
+        else {
+            noty({
+                width: 200,
+                text: notes['error'],
+                type: 'error',
+                dismissQueue: true,
+                timeout: 4000,
+            });
+        }
+    });
+            </script>
+            ;
+        </div>
+        <div class="page-container">
+            <div class="page-content">
+
+                <link href="/Areas/Scripts/css/apply.css" rel="stylesheet" />
+
+                <script type="text/javascript" src="/assets/js/plugins/forms/selects/select2.min.js"></script>
+                <script type="text/javascript" src="/assets/js/plugins/forms/styling/uniform.min.js"></script>
+                <script type="text/javascript" src="/assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+                <script type="text/javascript" src="/assets/js/plugins/forms/validation/validate.min.js"></script>
+
+
+                <div class="container content apply-content">
+                    <div class="panel panel-white col-lg-10 col-lg-offset-1">
+                        <div class="panel-body">
+                            <div class="tabbable">
+                                <ul id="header-tab" class=" nav nav-tabs nav-tabs-bottom">
+                                    <li><a id="don" name="heading" href="#bottom-tab1" data-toggle="tab">DANH SÁCH ĐƠN</a></li>
+                                    <li><a name="heading" href="#bottom-tab2" data-toggle="tab">DANH SÁCH PHIẾU</a></li>
+                                    <li><a id="ls" name="heading" href="#bottom-tab3" data-toggle="tab">LỊCH SỬ HOẠT ĐỘNG</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="bottom-tab1">
+
+                                        <div class="panel panel-white no-border-radius col-lg-6">
+                                            <ul class="media-list media-list-linked">
+                                                <li class="media border-bottom-blue row application">
+                                                    <div style="min-height:72px" class="media-link cursor-pointer">
+                                                        <div class="media-left text-blue"><span class="label label-flat label-rounded label-icon border-blue text-blue-600"><i class=" icon-pencil6"></i></span></div>
+                                                        <div class="media-body">
+                                                            <div class="media-heading text-semibold"><b>Đơn đề nghị x&#233;t tốt nghiệp</b></div>
+                                                            <div class="text-warning text-size-mini">(Có 2 đơn đang chờ giải quyết)</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse hide-div">
+                                                        <div class="contact-details">
+                                                            <ul class="list-extended list-unstyled list-icons">
+                                                                <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                                <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                                <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                                <li class="row">
+                                                                    <div class="form-group col-lg-5"><a class="btn btn-primary" onclick="taiNoiDung('DonDeNghiXetTotNghiep','ĐƠN ĐỀ NGHỊ XÉT TỐT NGHIỆP')">Nộp đơn Online</a> </div>
+                                                                    <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2133-maudonxinchuyencathi.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="media border-bottom-blue row application">
+                                                    <div style="min-height:72px" class="media-link cursor-pointer">
+                                                        <div class="media-left text-blue"><span class="label label-flat label-rounded label-icon border-blue text-blue-600"><i class=" icon-pencil6"></i></span></div>
+                                                        <div class="media-body">
+                                                            <div class="media-heading text-semibold"><b>Đơn xin chuyển ca thi</b></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse hide-div">
+                                                        <div class="contact-details">
+                                                            <ul class="list-extended list-unstyled list-icons">
+                                                                <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                                <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                                <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                                <li class="row">
+                                                                    <div class="form-group col-lg-5"><a class="btn btn-primary" onclick="taiNoiDung('DonXinChuyenCaThi','ĐƠN XIN CHUYỂN CA THI')">Nộp đơn Online</a> </div>
+                                                                    <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2133-maudonxinchuyencathi.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="media border-bottom-blue row application">
+                                                    <div style="min-height:72px" class="media-link cursor-pointer">
+                                                        <div class="media-left text-blue"><span class="label label-flat label-rounded label-icon border-blue text-blue-600"><i class=" icon-pencil6"></i></span></div>
+                                                        <div class="media-body">
+                                                            <div class="media-heading text-semibold"><b>Đơn xin nhập học lại</b></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse hide-div">
+                                                        <div class="contact-details">
+                                                            <ul class="list-extended list-unstyled list-icons">
+                                                                <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                                <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                                <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                                <li class="row">
+                                                                    <div class="form-group col-lg-5"><a class="btn btn-primary" onclick="taiNoiDung('DonXinNhapHocLai','ĐƠN XIN NHẬP HỌC LẠI')">Nộp đơn Online</a> </div>
+                                                                    <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2673-_don_xinnhaphoclai_new.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel panel-white no-border-radius col-lg-6">
+                                            <ul class="media-list media-list-linked">
+                                                <li class="media border-bottom-blue row application">
+                                                    <div style="min-height:72px" class="media-link cursor-pointer">
+                                                        <div class="media-left text-blue"><span class="label label-flat label-rounded label-icon border-blue text-blue-600"><i class=" icon-pencil6"></i></span></div>
+                                                        <div class="media-body">
+                                                            <div class="media-heading text-semibold"><b>Đơn xin tạm nghỉ học</b></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse hide-div">
+                                                        <div class="contact-details">
+                                                            <ul class="list-extended list-unstyled list-icons">
+                                                                <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                                <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                                <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                                <li class="row">
+                                                                    <div class="form-group col-lg-5"><a class="btn btn-primary" onclick="taiNoiDung('DonXinTamNghiHoc','ĐƠN XIN TẠM NGHỈ HỌC')">Nộp đơn Online</a> </div>
+                                                                    <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2674-_donxintamnghihoc_lopngay_new.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="media border-bottom-blue row application">
+                                                    <div style="min-height:72px" class="media-link cursor-pointer">
+                                                        <div class="media-left text-blue"><span class="label label-flat label-rounded label-icon border-blue text-blue-600"><i class=" icon-pencil6"></i></span></div>
+                                                        <div class="media-body">
+                                                            <div class="media-heading text-semibold"><b>Đơn xin thi để x&#243;a điểm I</b></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse hide-div">
+                                                        <div class="contact-details">
+                                                            <ul class="list-extended list-unstyled list-icons">
+                                                                <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                                <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                                <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                                <li class="row">
+                                                                    <div class="form-group col-lg-5"><a class="btn btn-primary" onclick="taiNoiDung('DonXinThiXoaDiemI','ĐƠN XIN THI ĐỂ XÓA ĐIỂM I')">Nộp đơn Online</a> </div>
+                                                                    <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2132-maudonxinthidexoadiemi.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="bottom-tab2">
+
+                                        <div class="panel panel-white no-border-radius col-lg-6">
+                                            <ul class="media-list media-list-linked">
+                                                <li class="media border-bottom-blue row application">
+                                                    <div class="media-link cursor-pointer">
+                                                        <div class="media-left text-blue"><span class="label label-flat label-rounded label-icon border-blue text-blue-600"><i class="icon-quill4"></i></span></div>
+                                                        <div class="media-body">
+                                                            <div class="media-heading text-semibold"><b>Phiếu hủy học phần đ&#227; đăng k&#253;</b></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse hide-div">
+                                                        <div class="contact-details">
+                                                            <ul class="list-extended list-unstyled list-icons">
+                                                                <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                                <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                                <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                                <li class="row">
+                                                                    <div class="form-group col-lg-5"><a class="btn btn-primary" onclick="taiNoiDung('PhieuHuyHocPhanDaDangKy','PHIẾU HỦY HỌC PHẦN ĐÃ ĐĂNG KÝ')">Nộp đơn Online</a> </div>
+                                                                    <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/i973-phieu-huy-hoc-phan-da-dang-ki.aspx" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel panel-white no-border-radius col-lg-6">
+                                            <ul class="media-list media-list-linked">
+                                                <li class="media border-bottom-blue row application">
+                                                    <div class="media-link cursor-pointer">
+                                                        <div class="media-left text-blue"><span class="label label-flat label-rounded label-icon border-blue text-blue-600"><i class=" icon-quill4"></i></span></div>
+                                                        <div class="media-body">
+                                                            <div class="media-heading text-semibold"><b>Phiếu r&#250;t bớt học phần đ&#227; đăng k&#253;</b></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse hide-div">
+                                                        <div class="contact-details">
+                                                            <ul class="list-extended list-unstyled list-icons">
+                                                                <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                                <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                                <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                                <li class="row">
+                                                                    <div class="form-group col-lg-5"><a class="btn btn-primary" onclick="taiNoiDung('PhieuRutBotHocPhanDaDangKy','PHIẾU RÚT BỚT HỌC PHẦN ĐÃ ĐĂNG KÝ')">Nộp đơn Online</a> </div>
+                                                                    <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2492-_phieurutbothocphandadangky.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="bottom-tab3">
+                                        <script type="text/javascript" src="/assets/js/plugins/tables/datatables/datatables.min.js"></script>
+                                        <script type="text/javascript" src="/assets/js/plugins/notifications/bootbox.min.js"></script>
+
+                                        <style>
+                                        </style>
+                                        <div>
+                                            <table class="table table-hover table-lg datatable-selection-single">
+                                                <thead>
+                                                    <tr>
+                                                        <th hidden></th>
+                                                        <th class="text-center">Tên đơn</th>
+                                                        <th class="text-center">Ngày nộp</th>
+                                                        <th class="text-center">Tình trạng</th>
+                                                        <th class="text-center">Ghi chú</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="1317052108391289">
+                                                        <th hidden>DonDeNghiXetTotNghiep</th>
+                                                        <td>Đơn đề nghị x&#233;t tốt nghiệp</td>
+                                                        <td class="text-center">21/05/2017 </td>
+                                                        <td name="1317052108391289">Chờ giải quyết</td>
+                                                        <td style="max-width:150px"></td>
+                                                    </tr>
+                                                    <tr id="1317050508282435">
+                                                        <th hidden>DonDeNghiXetTotNghiep</th>
+                                                        <td>Đơn đề nghị x&#233;t tốt nghiệp</td>
+                                                        <td class="text-center">05/05/2017 </td>
+                                                        <td name="1317050508282435">Chờ giải quyết</td>
+                                                        <td style="max-width:150px"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="modal_large" class="modal fade">
+                                        </div>
+                                        <script>
+
+    $('.confirm').on('click', function () {
+        var id = $(this).attr('id');
+        bootbox.confirm("Bạn có chắc chắn muốn hủy đơn này không?", function (result) {
+            if (result === true) {
+                $.ajax({
+                    type: 'post',
+                    url: '/SinhVien/LichSuNopDon/HuyDon',
+                    data: { id: id },
+                    success: function (data) {
+                        $('td[name="' + id + '"]').empty().addClass('text-danger').append(data.ketQua);
+                        $('li #' + id).remove();
+                    }
+                });
+            }
+        });
+    });
+
+    // Start - Datatable
+    $.extend($.fn.dataTable.defaults, {
+        autoWidth: false,
+        columnDefs: [{
+            orderable: false,
+            width: 'auto',
+            targets: [3]
+        }],
+        dom: '<"datatable-header"fl><"datatable-scroll"t><"datatable-footer"ip>',
+        language: {
+            search: '<span>Tìm kiếm:</span> _INPUT_',
+            lengthMenu: '<a id="xuat-pdf" class="btn btn-default">Xuất PDF</a> <a data-target="#modal_large" id="xem-don" class="btn btn-default">Xem đơn</a> <a id="huy-don" class="btn btn-default">Hủy đơn</a>',
+            paginate: { 'first': 'First', 'last': 'Last', 'next': '&rarr;', 'previous': '&larr;' }
+        },
+        drawCallback: function () {
+            $(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').addClass('dropup');
+        },
+        preDrawCallback: function () {
+            $(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').removeClass('dropup');
+        }
+    });
+    // Sort by Date
+    $('.datatable-selection-single').DataTable({
+        ordering: false,
+    });
+
+    var singleSelect = $('.datatable-selection-single').DataTable();
+    $('.datatable-selection-single tbody').on('click', 'tr', function () {
+        if ($(this).hasClass('success')) {
+            $(this).removeClass('success');
+        }
+        else {
+            singleSelect.$('tr.success').removeClass('success');
+            $(this).addClass('success');
+        }
+    });
+
+
+
+    $('.dataTables_filter input[type=search]').attr('placeholder', '');
+    $('.dataTables_length select').select2({
+        minimumResultsForSearch: "-1"
+    });
+    //End - Datatable
+    $('#xem-don').on('click', function () {
+        if (typeof singleSelect.$('tr.success').attr('id') == 'undefined') {
+            $(this).removeAttr("data-toggle", "modal");
+            $('body').find('.jGrowl').attr('class', '').attr('id', '').hide();
+            $.jGrowl('', {
+                position: 'bottom-right',
+                theme: 'bg-danger',
+                header: 'Chọn đơn cần xem'
+            });
+        }
+        else {
+            var mssv2 = '1511170158';
+            $(this).attr("data-toggle", "modal");
+            $("#modal_large").empty();
+            $("#modal_large").load('/SinhVien/Export/' + singleSelect.cell('.success', 0).data() + '_Export/', { id: singleSelect.$('tr.success').attr('id'), mssv: mssv2 });
+        }
+    });
+    $('#xuat-pdf').on('click', function () {
+        if (typeof singleSelect.$('tr.success').attr('id') == 'undefined') {
+            $('body').find('.jGrowl').attr('class', '').attr('id', '').hide();
+            $.jGrowl('', {
+                position: 'bottom-right',
+                theme: 'bg-danger',
+                header: 'Chọn đơn cần xuất PDF'
+            });
+        }
+        else {
+            var id = singleSelect.$('tr.success').attr('id');
+            window.location.href = "/SinhVien/Export/Index/" + id;
+        }
+    });
+
+    $('#huy-don').on('click', function () {
+        if (typeof singleSelect.$('tr.success').attr('id') == 'undefined') {
+            $('body').find('.jGrowl').attr('class', '').attr('id', '').hide();
+            $.jGrowl('', {
+                position: 'bottom-right',
+                theme: 'bg-danger',
+                header: 'Chọn đơn cần hủy'
+            });
+        }
+        else {
+            var id = singleSelect.$('tr.success').attr('id');
+            bootbox.confirm("Bạn có chắc chắn muốn hủy đơn này không?", function (result) {
+                if (result === true) {
+                    $.ajax({
+                        type: 'post',
+                        url: '/SinhVien/LichSuNopDon/HuyDon',
+                        data: { id: id },
+                        success: function (data) {
+                            if (data.ketQua == 1) {
+                                $('td[name="' + id + '"]').empty().addClass('text-danger').append("Đã hủy");
+                                $('li #' + id).remove();
+                            }
+                            else if (data.ketQua == 0) {
+                                alert("Đơn của bạn đã được hủy rồi !!!")
+                            }
+                            else {
+                                alert("Đơn của bạn đã được giải quyết !!!")
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    });
+                                        </script>
+
+                                    </div>
+                                    <div class="tab-pane" id="bottom-tab4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+    $(document).ready(function () {
+        var flag = 'False';
+        if (flag == 'True') {
+            $('#ls').trigger('click');
+            $('body').find('.jGrowl').attr('class', '').attr('id', '').hide();
+            $.jGrowl('Vui lòng kiểm tra lại đơn từ', {
+                position: 'top-center',
+                theme: 'bg-teal',
+                header: 'Bạn đã nộp đơn thành công !!!'
+            });
+        }
+        else {
+            $('#don').trigger('click');
+        }
+    });
+    $('.application').click(function () {
+        if ($(this).find('.collapse').is(':hidden')) {
+            $('.hide-div').each(function () {
+                $(this).hide(300);
+            });
+            $(this).find('.collapse').show(300);
+        }
+    });
+    function taiNoiDung(link, name) {
+        $('#bottom-tab4').html('<div class="text-center"><i class="text-blue-800 icon-sync spinner"></i><br /><br /><p>Đang tải dữ liệu vui lòng chờ trong giây lát !!!</p></div>');
+        $('#new-tab').remove();
+        $('#header-tab').append('<li id="new-tab" style="border-bottom: none"><a id="new-a" name="heading" href="#bottom-tab4" data-toggle="tab">' + name + '</a></li>');
+        $('html, body').animate({ scrollTop: $("#bottom-tab1").offset().top - 150 }, 500);
+        $('#bottom-tab4').load("/SinhVien/" + link);
+        $('#new-a').trigger('click');
+    }
+
+    $('a[name="heading"]').click(function () {
+        $('a[name="heading"]').css("color", "black");
+        $(this).css("color", "#039be5");
+    });
+    $('#header-tab').on('click', 'a#new-a', function () {
+        $('a[name="heading"]').css("color", "black");
+        $(this).css("color", "#039be5");
+    })
+
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="col-md-12">
+            <div class="col-md-2 text-right">
+                <ul style="padding-right:10px">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><a href="/">Phòng Đào tạo - Khảo thí</a></li>
+                    <li><a href="/">Hệ thống học tập</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 text-right">
+                <ul style="padding-right:10px">
+                    <li><a href="#">Thông báo chung</a></li>
+                    <li><a href="#">Thông báo cá nhân</a></li>
+                    <li><a href="/BieuDo/XyLy">Sơ đồ học tập</a></li>
+                    <li><a href="/TuVan/TuVan">Tư vấn học tập</a></li>
+                    <li><a href="/TuVan/ThongTinSV">Thông tin cá nhân</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <div>
+                    <a href="/"><img class="img-responsive logo-hutech" src="/assert/pictures/TrangChu/Footer/logo hutech.png" /> </a>
+                </div>
+            </div>
+            <div class="col-md-3 text-left">
+                <ul style="padding-left:10px">
+                    <li>Phòng Đào tạo - Khảo thí</li>
+                    <li>Trường ĐH Công nghệ Tp.HCM</li>
+                    <li>475A Điện Biên Phủ, P.25, Q.Bình Thạnh</li>
+                    <li>Thành phố Hồ Chí Minh</li>
+                    <li>Việt Nam</li>
+                </ul>
+            </div>
+            <div class="col-md-2 text-left">
+                <ul style="padding-left:10px">
+                    <li>ĐT: (08) 3512 0782</li>
+                    <li>Fax: (08) 3512 0784</li>
+                    <li>daotao@hutech.edu.vn</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-12 text-center">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/uchicago" title="Facebook">
+                        <i class="icon-facebook2" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/UChicago" title="YouTube"><i class=" icon-youtube3" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <label class="copyright">©2016 The University of Hutech</label>
+        </div>
+    </div>
+</body>
+</html>
+

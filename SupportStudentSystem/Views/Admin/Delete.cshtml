@@ -1,0 +1,161 @@
+﻿@model SupportStudentSystem.Models.DonDeNghiXetTotNghiep
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DonDeNghiXetTotNghiep</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DonTuID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonTuID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CCTAID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CCTAID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoHieu_CCTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoHieu_CCTA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoVaoSo_CCTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoVaoSo_CCTA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayCap_CCTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCap_CCTA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CCTHID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CCTHID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoHieu_CCTH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoHieu_CCTH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoVaoSo_CCTH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoVaoSo_CCTH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayCap_CCTH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCap_CCTH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CCNHID1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CCNHID1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoHieu_CCNH1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoHieu_CCNH1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoVaoSo_CCNH1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoVaoSo_CCNH1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayCap_CCNH1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCap_CCNH1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CCNHID2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CCNHID2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoHieu_CCNH2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoHieu_CCNH2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoVaoSo_CCNH2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoVaoSo_CCNH2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayCap_CCNH2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCap_CCNH2)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

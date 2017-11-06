@@ -1,0 +1,55 @@
+.tooltip-inner {
+    background-color: #B94A48;
+    color: #fff;
+}
+
+.tooltip.in {
+    opacity: 1 !important;
+}
+
+.tooltip.top {
+    top: 30px;
+}
+
+    .tooltip.top .tooltip-arrow {
+        border-top-color: #B94A48;
+    }
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #B94A48;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #B94A48;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #B94A48;
+}
+
+.well {
+    background: none;
+}
+
+#menu .nav > li > a:focus, .nav > li > a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    border-bottom: none;
+}
+
+.media-body {
+    vertical-align: middle;
+}
+
+.nav-tabs.nav-tabs-bottom > li.active > a, .nav-tabs.nav-tabs-bottom > li.active > a:hover, .nav-tabs.nav-tabs-bottom > li.active > a:focus {
+    border-bottom-width: 2px;
+    border-color: transparent;
+    border-bottom-color: #00bcd4;
+    background-color: transparent;
+}
+ .apply-content {
+        margin-top:80px;
+    }
+@media screen and (max-width: 769px) {
+    .apply-content {
+        margin-top:10px
+    }
+}

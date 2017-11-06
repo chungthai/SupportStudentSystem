@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "XacNhanThongTin_DXXDI";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="page-container">
+        <div class="page-content">
+            <div class="container content apply-content">
+                <div class="panel panel-white col-lg-10 col-lg-offset-1">
+                    <div class="tabbable">
+                        <ul id="header-tab" class=" nav nav-tabs nav-tabs-bottom">
+                            <li class="active">
+                                <a id="don" name="heading" href="#bottom-tab1" data-toggle="tab" aria-expanded="true" style="color: rgb(3, 155, 229);width:100%; height:10%;padding-left:20%">ĐƠN XÉT TỐT NGHIỆP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="panel panel-white">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title text-center text-blue-800" style="line-height:50px" id="tieuDe">ĐƠN XIN THI ĐỂ XÓA ĐIỂM I</h3>
+                                </div>
+                                <ul id="stepy-07866542023465017-header" class="stepy-header">
+                                    <li id="stepy-07866542023465017-head-0" class="stepy-active" style="cursor: default;">
+                                        <div>1</div>
+                                        <span>Thông tin cá nhân</span>
+                                    </li>
+                                    <li id="stepy-07866542023465017-head-1" style="cursor: default;">
+                                        <div>2</div>
+                                        <span>Thông tin đơn xóa điểm I</span>
+                                    </li>
+                                    <li id="stepy-07866542023465017-head-2" style="cursor: default;">
+                                        <div>3</div>
+                                        <span>Xác nhận thông tin</span>
+                                    </li>
+                                </ul>
+                                <form class="stepy-validation" method="post" action="#" id="stepy-07866542023465017">
+                                    <fieldset title="3" id="stepy-9106564322994997-step-2" class="stepy-step" style="display: block;">
+                                        <hr><br>
+                                        <legend style="display: none;">Xác nhận thông tin</legend>
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="content-divider text-center"><span>Thông tin đã đăng ký</span></div>
+                                            <br>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <div class="well col-md-10 col-md-offset-1">
+                                                <div class="col-md-12 form-group">
+                                                    <div class="col-md-7">
+                                                        Họ và tên: <b>@item.HoLot @item.Ten</b>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        Ngày sinh: <b>@item.NgaySinh</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <div class="col-md-4">
+                                                        MSSV: <b>@item.MSSV</b>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        Ngành: <b>@item.TenNganh</b>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        Lớp: <b>@item.TenLop</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <div class="col-md-8">
+                                                        Trình độ đào tạo: <b>@item.TenHDT</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <div class="col-md-8">
+                                                        Số điện thoại liên lạc: <b>@item.SDTSV</b>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <div class="col-md-5">
+                                                        Môn đã hoãn thi: <b>@Session["MonHoanThi"]</b>
+                                                    </div>
+                                                    <div class="col-md-7 row">
+                                                        <b></b>
+                                                    </div>
+                                                </div>
+                                                @*<div class="col-md-12 form-group">
+                                                    <div class="col-md-5">
+                                                        Lý do: <b>@Session["LyDoHoanThi"]</b>
+                                                    </div>
+                                                    <div class="col-md-7 row">
+                                                        <b></b>
+                                                    </div>
+                                                </div>*@
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10 col-lg-offset-1">
+                                            <div class="checkbox">
+                                                <label class="checkbox-inline">
+                                                    <div class="checker" id="uniform-_check">
+                                                        <span><input type="checkbox" id="_check" class="styled"></span>
+                                                    </div>
+                                                    <span class="text-danger">Tôi đã đọc kĩ điều kiện xét tốt nghiệp theo Quy chế đào tạo. Tôi cam đoan các thông tin khai báo trên là hoàn toàn chính xác. Nếu có sai sót tôi xin chịu xử lý theo Quy chế đào tạo.</span>
+                                                </label>
+                                            </div>
+                                            <p id="p-error" class="text-danger text-center"></p>
+                                        </div>
+                                        <div class="stepy-navigator"><a href="/Home/DonXinDiemI" class="button-back btn btn-default"><i class="icon-arrow-left13 position-left"></i> Quay lại</a> <input class="btn btn-primary stepy-finish" type="submit" value="Nộp đơn"></div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

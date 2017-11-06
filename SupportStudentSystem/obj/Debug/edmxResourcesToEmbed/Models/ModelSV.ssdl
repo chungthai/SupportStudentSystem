@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QUANLYSINHVIENModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CT_Diem_HK">
+    <Key>
+      <PropertyRef Name="MaHK" />
+      <PropertyRef Name="MSSV" />
+      <PropertyRef Name="MaMH" />
+    </Key>
+    <Property Name="MaHK" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MSSV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MaMH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Diem1" Type="varchar" MaxLength="5" />
+    <Property Name="Diem2" Type="varchar" MaxLength="5" />
+    <Property Name="Diem3" Type="varchar" MaxLength="5" />
+    <Property Name="DiemHe10" Type="varchar" MaxLength="5" />
+    <Property Name="DiemChu" Type="varchar" MaxLength="5" />
+    <Property Name="DiemHe4" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="CT_HK">
+    <Key>
+      <PropertyRef Name="MaHK" />
+      <PropertyRef Name="MSSV" />
+    </Key>
+    <Property Name="MaHK" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MSSV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TongTC" Type="int" />
+    <Property Name="SoTC_Dat" Type="int" />
+    <Property Name="SoTC_TichLuy" Type="int" />
+    <Property Name="DiemTB_HK_He10" Type="float" />
+    <Property Name="DiemTB_HK_He4" Type="float" />
+    <Property Name="DiemTL_He10" Type="float" />
+    <Property Name="DiemTL_He4" Type="float" />
+  </EntityType>
+  <EntityType Name="CT_LichThi">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MSSV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="HoLot" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ten" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="MaMH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenMH" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="NhomThi" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="ToThi" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="NgayThi" Type="smalldatetime" Nullable="false" />
+    <Property Name="GioThi" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PhongThi" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CT_PhieuHuyHocPhan">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="STT" Type="tinyint" Nullable="false" />
+    <Property Name="HocPhanID" Type="varchar" MaxLength="10" />
+    <Property Name="TenHocPhan" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CT_PhieuRutHocPhan">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="STT" Type="tinyint" Nullable="false" />
+    <Property Name="HocPhanID" Type="varchar" MaxLength="10" />
+    <Property Name="TenHocPhan" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ChungChiTiengAnh">
+    <Key>
+      <PropertyRef Name="CCTAID" />
+    </Key>
+    <Property Name="CCTAID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenCCTA" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="ChungChiTinHoc">
+    <Key>
+      <PropertyRef Name="CCTHID" />
+    </Key>
+    <Property Name="CCTHID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenCCTH" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="ChungChiTinHocNganHan">
+    <Key>
+      <PropertyRef Name="CCNHID" />
+    </Key>
+    <Property Name="CCNHID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenCCNH" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="DiemQuyDoi">
+    <Key>
+      <PropertyRef Name="DiemChu" />
+    </Key>
+    <Property Name="DiemChu" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="DiemMin" Type="float" />
+    <Property Name="DiemMax" Type="float" />
+    <Property Name="DiemHe4" Type="float" />
+  </EntityType>
+  <EntityType Name="DonDeNghiXetTotNghiep">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CCTAID" Type="varchar" MaxLength="20" />
+    <Property Name="SoHieu_CCTA" Type="varchar" MaxLength="20" />
+    <Property Name="SoVaoSo_CCTA" Type="varchar" MaxLength="20" />
+    <Property Name="NgayCap_CCTA" Type="datetime" />
+    <Property Name="MinhChung_CCTA" Type="varchar" MaxLength="100" />
+    <Property Name="CCTHID" Type="varchar" MaxLength="20" />
+    <Property Name="SoHieu_CCTH" Type="varchar" MaxLength="20" />
+    <Property Name="SoVaoSo_CCTH" Type="varchar" MaxLength="20" />
+    <Property Name="NgayCap_CCTH" Type="datetime" />
+    <Property Name="MinhChung_CCTH" Type="varchar" MaxLength="100" />
+    <Property Name="CCNHID1" Type="varchar" MaxLength="20" />
+    <Property Name="SoHieu_CCNH1" Type="varchar" MaxLength="20" />
+    <Property Name="SoVaoSo_CCNH1" Type="varchar" MaxLength="20" />
+    <Property Name="NgayCap_CCNH1" Type="datetime" />
+    <Property Name="MinhChung_CCNH1" Type="varchar" MaxLength="100" />
+    <Property Name="CCNHID2" Type="varchar" MaxLength="20" />
+    <Property Name="SoHieu_CCNH2" Type="varchar" MaxLength="20" />
+    <Property Name="SoVaoSo_CCNH2" Type="varchar" MaxLength="20" />
+    <Property Name="NgayCap_CCNH2" Type="datetime" />
+    <Property Name="MinhChung_CCNH2" Type="varchar" MaxLength="100" />
+    <Property Name="LyDo" Type="nvarchar" MaxLength="100" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DonTu">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayNopDon" Type="datetime" />
+    <Property Name="LoaiDonTuID" Type="varchar" MaxLength="10" />
+    <Property Name="MSSV" Type="varchar" MaxLength="10" />
+    <Property Name="NguoiXuLy" Type="nvarchar" MaxLength="50" />
+    <Property Name="KHXuLy" Type="varchar" MaxLength="10" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="30" />
+    <Property Name="TrangThai" Type="bit" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="DonXinChuyenCaThi">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaMH_Cu" Type="varchar" MaxLength="10" />
+    <Property Name="NhomThi_Cu" Type="varchar" MaxLength="5" />
+    <Property Name="ToThi_Cu" Type="varchar" MaxLength="5" />
+    <Property Name="PhongThi_Cu" Type="varchar" MaxLength="10" />
+    <Property Name="NgayThi_Cu" Type="smalldatetime" />
+    <Property Name="GioThi_Cu" Type="varchar" MaxLength="10" />
+    <Property Name="MaMH_Moi" Type="varchar" MaxLength="10" />
+    <Property Name="NhomThi_Moi" Type="varchar" MaxLength="5" />
+    <Property Name="ToThi_Moi" Type="varchar" MaxLength="5" />
+    <Property Name="PhongThi_Moi" Type="varchar" MaxLength="10" />
+    <Property Name="NgayThi_Moi" Type="smalldatetime" />
+    <Property Name="GioThi_Moi" Type="varchar" MaxLength="10" />
+    <Property Name="LyDo" Type="nvarchar" MaxLength="1000" />
+    <Property Name="MinhChung" Type="varchar" MaxLength="8000" />
+  </EntityType>
+  <EntityType Name="DonXinNhanDiemI_HoanThi">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="HocPhanID" Type="varchar" MaxLength="10" />
+    <Property Name="LyDo" Type="nvarchar" MaxLength="1000" />
+    <Property Name="MinhChung" Type="varchar" MaxLength="8000" />
+  </EntityType>
+  <EntityType Name="DonXinNhapHocLai">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DonXinTamNghiHoc">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DonXinThiXoaDiemI">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DonXinNhanDiemI_ID" Type="varchar" MaxLength="20" />
+    <Property Name="HocPhanID" Type="varchar" MaxLength="10" />
+    <Property Name="NhomThi" Type="varchar" MaxLength="5" />
+    <Property Name="ToThi" Type="varchar" MaxLength="5" />
+    <Property Name="NgayThi" Type="smalldatetime" />
+    <Property Name="PhongThi" Type="varchar" MaxLength="10" />
+    <Property Name="GioThi" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="HeDaoTao">
+    <Key>
+      <PropertyRef Name="MaHDT" />
+    </Key>
+    <Property Name="MaHDT" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenHDT" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Khoa">
+    <Key>
+      <PropertyRef Name="MaKhoa" />
+    </Key>
+    <Property Name="MaKhoa" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenKhoa" Type="nvarchar" MaxLength="50" />
+    <Property Name="SDT_Khoa" Type="varchar" MaxLength="15" />
+    <Property Name="email_Khoa" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="LichThi">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="int" Nullable="false" />
+    <Property Name="LopSV" Type="varchar" MaxLength="30" />
+    <Property Name="MaMH" Type="varchar" MaxLength="10" />
+    <Property Name="TenMH" Type="nvarchar" MaxLength="100" />
+    <Property Name="SoTC" Type="tinyint" />
+    <Property Name="NhomThi" Type="varchar" MaxLength="5" />
+    <Property Name="ToThi" Type="varchar" MaxLength="5" />
+    <Property Name="SoLuongThi" Type="tinyint" />
+    <Property Name="HinhThucThi" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoPhutThi" Type="tinyint" />
+    <Property Name="Thu" Type="tinyint" />
+    <Property Name="Ngay" Type="smalldatetime" />
+    <Property Name="Gio" Type="varchar" MaxLength="10" />
+    <Property Name="Phong" Type="varchar" MaxLength="10" />
+    <Property Name="DVQL_SV" Type="varchar" MaxLength="10" />
+    <Property Name="DVQL_MH" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="LoaiDonTu">
+    <Key>
+      <PropertyRef Name="LoaiDonTuID" />
+    </Key>
+    <Property Name="LoaiDonTuID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenLoaiDonTu" Type="nvarchar" MaxLength="80" />
+    <Property Name="ThoiHanGiaiQuyet" Type="nvarchar" MaxLength="50" />
+    <Property Name="TrangThai" Type="bit" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="250" />
+    <Property Name="ThoiHanHuyDon" Type="tinyint" />
+    <Property Name="Link" Type="varchar" MaxLength="200" />
+    <Property Name="ThoiGianKichHoat" Type="smalldatetime" />
+    <Property Name="ThoiGianKetThuc" Type="smalldatetime" />
+    <Property Name="HKXuLy" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="LoaiMonHoc">
+    <Key>
+      <PropertyRef Name="LoaiMonHocID" />
+    </Key>
+    <Property Name="LoaiMonHocID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenLoaiMonHoc" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Lop">
+    <Key>
+      <PropertyRef Name="MaLop" />
+    </Key>
+    <Property Name="MaLop" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenLop" Type="nvarchar" MaxLength="10" />
+    <Property Name="NienKhoaID" Type="varchar" MaxLength="10" />
+    <Property Name="MaHDT" Type="varchar" MaxLength="10" />
+    <Property Name="MaNganh" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MonHoc">
+    <Key>
+      <PropertyRef Name="MaMH" />
+    </Key>
+    <Property Name="MaMH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenMH" Type="nvarchar" MaxLength="80" />
+    <Property Name="TongTC" Type="int" />
+    <Property Name="SoTC_LT" Type="int" />
+    <Property Name="SoTC_TH" Type="int" />
+    <Property Name="SoTC_DATT" Type="int" />
+    <Property Name="SoTC_DATN" Type="int" />
+    <Property Name="LoaiMonHocID" Type="varchar" MaxLength="10" />
+    <Property Name="DiemHe1" Type="int" />
+    <Property Name="DiemHe2" Type="int" />
+    <Property Name="DiemHe3" Type="int" />
+    <Property Name="DonViQuanLy" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="MonHocTuongDuong">
+    <Key>
+      <PropertyRef Name="MaMH_Cu" />
+      <PropertyRef Name="MaMH_TD" />
+    </Key>
+    <Property Name="MaMH_Cu" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenMH_Cu" Type="nvarchar" MaxLength="100" />
+    <Property Name="MaMH_TD" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenMH_TD" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Nganh">
+    <Key>
+      <PropertyRef Name="MaNganh" />
+    </Key>
+    <Property Name="MaNganh" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenNganh" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaKhoa" Type="varchar" MaxLength="20" />
+    <Property Name="KyHieuNganh" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="NhanVienID" />
+    </Key>
+    <Property Name="NhanVienID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ho" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ten" Type="nvarchar" MaxLength="10" />
+    <Property Name="NgaySinh" Type="smalldatetime" />
+    <Property Name="GioiTinhNam" Type="bit" />
+    <Property Name="MatKhau" Type="varchar" MaxLength="1000" />
+    <Property Name="SoDienThoai" Type="varchar" MaxLength="20" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="200" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="TrangThai" Type="bit" />
+    <Property Name="NgayTao" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="PhanHoi">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="bigint" Nullable="false" />
+    <Property Name="MaNguoiGui" Type="varchar" MaxLength="20" />
+    <Property Name="TenNguoiGui" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoiDung" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NgayGui" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="PhanQuyenChucNang">
+    <Key>
+      <PropertyRef Name="NhanVienID" />
+      <PropertyRef Name="TenBangDuLieu" />
+    </Key>
+    <Property Name="NhanVienID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenBangDuLieu" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="Xem" Type="bit" />
+    <Property Name="Sua" Type="bit" />
+    <Property Name="ThemMoi" Type="bit" />
+  </EntityType>
+  <EntityType Name="PhanQuyenXuLyDonTu">
+    <Key>
+      <PropertyRef Name="NhanVienID" />
+      <PropertyRef Name="LoaiDonTuID" />
+    </Key>
+    <Property Name="NhanVienID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LoaiDonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Xem" Type="bit" />
+    <Property Name="XuLy" Type="bit" />
+  </EntityType>
+  <EntityType Name="PhieuHuyHocPhanDaDangKy">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SoTinChiDaDangKy" Type="tinyint" />
+    <Property Name="LyDo" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="PhieuRutBotHocPhanDaDangKy">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SoTinChiDaDangKy" Type="tinyint" />
+    <Property Name="LyDo" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="PhongHoc">
+    <Key>
+      <PropertyRef Name="PhongHocID" />
+    </Key>
+    <Property Name="PhongHocID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CoSoHoc" Type="varchar" MaxLength="5" />
+    <Property Name="SoLuongBan" Type="tinyint" />
+    <Property Name="LoaiPhong" Type="nvarchar" MaxLength="50" />
+    <Property Name="KyHieu" Type="varchar" MaxLength="5" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SinhVien">
+    <Key>
+      <PropertyRef Name="MSSV" />
+    </Key>
+    <Property Name="MSSV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MaLop" Type="varchar" MaxLength="10" />
+    <Property Name="HoLot" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ten" Type="nvarchar" MaxLength="10" />
+    <Property Name="GioiTinh" Type="bit" />
+    <Property Name="NgaySinh" Type="smalldatetime" />
+    <Property Name="NoiSinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="DanToc" Type="nvarchar" MaxLength="20" />
+    <Property Name="TonGiao" Type="nvarchar" MaxLength="20" />
+    <Property Name="SDTSV" Type="varchar" MaxLength="20" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="150" />
+    <Property Name="emailSV" Type="varchar" MaxLength="50" />
+    <Property Name="SDT_LienHe" Type="varchar" MaxLength="20" />
+    <Property Name="DiaChiThuongTru" Type="nvarchar" MaxLength="150" />
+    <Property Name="MatKhau" Type="varchar" MaxLength="30" />
+    <Property Name="CauHoiBaoMat" Type="nvarchar" MaxLength="150" />
+    <Property Name="TraLoiBaoMat" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="TinhTrang_GhiChu">
+    <Key>
+      <PropertyRef Name="LoaiDonTuID" />
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="LoaiDonTuID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="STT" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="NoiDung" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="TinhTrangXuLy">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" />
+    <Property Name="NhanVienID" Type="varchar" MaxLength="50" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgayXuLy" Type="smalldatetime" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="ThoiGianNhanDon">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="int" Nullable="false" />
+    <Property Name="NgayBatDau" Type="smalldatetime" />
+    <Property Name="NgayKetThuc" Type="smalldatetime" />
+    <Property Name="HKXuLy" Type="varchar" MaxLength="5" />
+    <Property Name="ThoiGianGiaiQuyet" Type="nvarchar" MaxLength="50" />
+    <Property Name="ThoiHanHuyDon" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QUANLYSINHVIEN.dbo.DANHSACHDON' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DANHSACHDON">
+    <Key>
+      <PropertyRef Name="DonTuID" />
+      <PropertyRef Name="MSSV" />
+    </Key>
+    <Property Name="DonTuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MSSV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="HoLot" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ten" Type="nvarchar" MaxLength="10" />
+    <Property Name="TenLop" Type="nvarchar" MaxLength="10" />
+    <Property Name="NgayNopDon" Type="datetime" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QUANLYSINHVIEN.dbo.donxoaI' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="donxoaI">
+    <Key>
+      <PropertyRef Name="MaMH" />
+    </Key>
+    <Property Name="TenLop" Type="nvarchar" MaxLength="10" />
+    <Property Name="MaMH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenMH" Type="nvarchar" MaxLength="80" />
+    <Property Name="MSSV" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QUANLYSINHVIEN.dbo.TTSV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TTSV">
+    <Key>
+      <PropertyRef Name="MSSV" />
+    </Key>
+    <Property Name="MSSV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="HoLot" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ten" Type="nvarchar" MaxLength="10" />
+    <Property Name="TenLop" Type="nvarchar" MaxLength="10" />
+    <Property Name="TenNganh" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgaySinh" Type="smalldatetime" />
+    <Property Name="SDTSV" Type="varchar" MaxLength="20" />
+    <Property Name="TenHDT" Type="nvarchar" MaxLength="30" />
+    <Property Name="emailSV" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="QUANLYSINHVIENModelStoreContainer">
+    <EntitySet Name="CT_Diem_HK" EntityType="Self.CT_Diem_HK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CT_HK" EntityType="Self.CT_HK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CT_LichThi" EntityType="Self.CT_LichThi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CT_PhieuHuyHocPhan" EntityType="Self.CT_PhieuHuyHocPhan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CT_PhieuRutHocPhan" EntityType="Self.CT_PhieuRutHocPhan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChungChiTiengAnh" EntityType="Self.ChungChiTiengAnh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChungChiTinHoc" EntityType="Self.ChungChiTinHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChungChiTinHocNganHan" EntityType="Self.ChungChiTinHocNganHan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DiemQuyDoi" EntityType="Self.DiemQuyDoi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonDeNghiXetTotNghiep" EntityType="Self.DonDeNghiXetTotNghiep" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonTu" EntityType="Self.DonTu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonXinChuyenCaThi" EntityType="Self.DonXinChuyenCaThi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonXinNhanDiemI_HoanThi" EntityType="Self.DonXinNhanDiemI_HoanThi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonXinNhapHocLai" EntityType="Self.DonXinNhapHocLai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonXinTamNghiHoc" EntityType="Self.DonXinTamNghiHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonXinThiXoaDiemI" EntityType="Self.DonXinThiXoaDiemI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HeDaoTao" EntityType="Self.HeDaoTao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Khoa" EntityType="Self.Khoa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LichThi" EntityType="Self.LichThi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoaiDonTu" EntityType="Self.LoaiDonTu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoaiMonHoc" EntityType="Self.LoaiMonHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonHoc" EntityType="Self.MonHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonHocTuongDuong" EntityType="Self.MonHocTuongDuong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nganh" EntityType="Self.Nganh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhanHoi" EntityType="Self.PhanHoi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhanQuyenChucNang" EntityType="Self.PhanQuyenChucNang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhanQuyenXuLyDonTu" EntityType="Self.PhanQuyenXuLyDonTu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhieuHuyHocPhanDaDangKy" EntityType="Self.PhieuHuyHocPhanDaDangKy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhieuRutBotHocPhanDaDangKy" EntityType="Self.PhieuRutBotHocPhanDaDangKy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhongHoc" EntityType="Self.PhongHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TinhTrang_GhiChu" EntityType="Self.TinhTrang_GhiChu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TinhTrangXuLy" EntityType="Self.TinhTrangXuLy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThoiGianNhanDon" EntityType="Self.ThoiGianNhanDon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DANHSACHDON" EntityType="Self.DANHSACHDON" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DANHSACHDON].[DonTuID] AS [DonTuID], 
+    [DANHSACHDON].[MSSV] AS [MSSV], 
+    [DANHSACHDON].[HoLot] AS [HoLot], 
+    [DANHSACHDON].[Ten] AS [Ten], 
+    [DANHSACHDON].[TenLop] AS [TenLop], 
+    [DANHSACHDON].[NgayNopDon] AS [NgayNopDon], 
+    [DANHSACHDON].[TinhTrang] AS [TinhTrang]
+    FROM [dbo].[DANHSACHDON] AS [DANHSACHDON]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="donxoaI" EntityType="Self.donxoaI" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [donxoaI].[TenLop] AS [TenLop], 
+    [donxoaI].[MaMH] AS [MaMH], 
+    [donxoaI].[TenMH] AS [TenMH], 
+    [donxoaI].[MSSV] AS [MSSV]
+    FROM [dbo].[donxoaI] AS [donxoaI]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TTSV" EntityType="Self.TTSV" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TTSV].[MSSV] AS [MSSV], 
+    [TTSV].[HoLot] AS [HoLot], 
+    [TTSV].[Ten] AS [Ten], 
+    [TTSV].[TenLop] AS [TenLop], 
+    [TTSV].[TenNganh] AS [TenNganh], 
+    [TTSV].[NgaySinh] AS [NgaySinh], 
+    [TTSV].[SDTSV] AS [SDTSV], 
+    [TTSV].[TenHDT] AS [TenHDT], 
+    [TTSV].[emailSV] AS [emailSV]
+    FROM [dbo].[TTSV] AS [TTSV]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

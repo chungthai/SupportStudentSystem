@@ -1,0 +1,51 @@
+﻿@model SupportStudentSystem.Models.DonXinNhanDiemI_HoanThi
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DonXinNhanDiemI_HoanThi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DonTuID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonTuID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HocPhanID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HocPhanID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LyDo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LyDo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MinhChung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MinhChung)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

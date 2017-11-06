@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F2F2F2;
+    font-family: Verdana;
+}
+
+.logo_navbar {
+    width: 24px;
+    height: 24px;
+}
+
+#header a {
+    color: #FFE11A;
+}
+
+#header .nav li:nth-child(4n+1):first-child {
+    font-size: 28px;
+}
+
+#header .dropdown-menu > li > a:first-child {
+    font-size: 14px;
+}
+
+
+#header .nav li:nth-child(4n+1):first-child:hover {
+    border-bottom: none;
+}
+
+#header .dropdown-menu li:nth-child(4n+1):first-child:hover {
+    color: #8d7a0b;
+}
+
+#header .nav li > a:hover {
+    border-bottom: none;
+    color: #8d7a0b;
+}
+
+#header .dropdown-menu li > a:hover, .dropdown-menu li > a:active {
+    border-bottom: none;
+    color: #8d7a0b;
+    background: none;
+}
+
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-default {
+    background-color: #004358 !important;
+}
+
+.navbar-container {
+    padding: 10px 0 10px 0;
+}
+
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container {
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+/*end menu*/
+
+.btn-custom {
+    margin-left:10px;
+    background-color: #1F8A70;
+    color: #FFE11A;
+}
+
+.dropdown-menu {
+    background-color: #004358;
+    color: #FFE11A;
+}
+
+
+.avatar {
+    margin: 50px 0 0 0;
+}
+
+    .avatar img {
+        max-width: 100%;
+    }
+
+.ThongTin {
+    margin-top: 20px;
+}
+
+#footer .container-fluid {
+    background-color: #004358;
+}
+
+.footer {
+    background-color: #004358;
+}
+
+    .footer ul {
+        list-style: none;
+    }
+
+        .footer ul li a {
+            color: #FFE11A;
+        }
+
+    .footer a:hover {
+        color: #FD7400;
+    }
+
+    .footer p {
+        color: #FFE11A;
+    }
+
+    .footer .row-fluid:last-child {
+        border-top: 1px solid #4f4e4e;
+        padding: 1em 0;
+    }
+
+.shield {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+    .shield img {
+        width: 100%;
+        height: 100%;
+    }
+
+.contact {
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #727171;
+}
+
+    .contact li {
+        display: inline;
+    }
+
+.sub-footer {
+    padding: 30px 0 20px 0;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: auto;
+    background-color: #000;
+}
+
+.panel-heading {
+    padding: 5px 15px;
+}
+
+.panel-footer {
+    padding: 1px 15px;
+    color: #A0A0A0;
+}
+
+.profile-img {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.dangXuat {
+    font-style: italic;
+    color: #6ff6f6;
+    background-color: rgba(0, 0, 0, 0.00);
+    border-color: none;
+    border: none;
+}
+
+#dangXuat .dangXuat input[type=submit]:hover {
+    color: white !important;
+    font-style: normal !important;
+}
+
+.bg-danger {
+    background-color: #f44336;
+    border-color: #f44336;
+    color: #fff;
+    opacity: 1;
+}
+
+.jGrowl-notification {
+    width: 300px;
+}
+/* ------------------------------------------------------------------------------
+        *
+        *  # jGrowl notifications
+        *
+        *  Styles for jgrowl.min.js - an unobtrusive notification system for web applications
+        *
+        *  Version: 1.0
+        *  Latest update: May 25, 2015
+        *
+        * ---------------------------------------------------------------------------- */
+.jGrowl {
+    z-index: 2001;
+    position: absolute;
+}
+
+    .jGrowl.center {
+        top: 5%;
+    }
+
+body > .jGrowl {
+    position: fixed;
+}

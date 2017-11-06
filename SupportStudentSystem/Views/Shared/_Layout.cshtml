@@ -1,0 +1,274 @@
+﻿@using SupportStudentSystem.Models;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hệ thống tư vấn học tập trực tuyến</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="~/Assets/css/Font_Google.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/css/icons_icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="~/Assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Assets/Client/LAYOUT/Scripts/Layout/layout.css" rel="stylesheet">
+    <link href="~/Assets/Client/LAYOUT/Scripts/Layout/apply.css" rel="stylesheet" />
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="~/Assets/Client/LAYOUT/assets/js/core/libraries/jquery.min.js"></script>
+    <script src="~/Assets/Client/LAYOUT/Scripts/blockui.min.js"></script>
+    <script src="~/Assets/Client/LAYOUT/Scripts/XuLy/XuLyMenu.js"></script>
+    <script src="~/Assets/Client/LAYOUT/Scripts/header.js"></script>
+    <script type="text/javascript" src="~/Assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="~/Assets/js/plugins/notifications/pnotify.min.js"></script>
+    <script type="text/javascript" src="~/Assets/js/plugins/ui/prism.min.js"></script>
+    <script type="text/javascript" src="~/Assets/js/plugins/forms_styling/uniform.min.js"></script>
+    <script type="text/javascript" src="~/Assets/js/core/app.js"></script>
+    <script type="text/javascript" async>
+        var user = '';
+    </script>
+
+</head>
+
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/Home/Index">HUTECH</a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-paragraph-justify3"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <div class="navbar-right">
+                    @if (Session["Tensinhvien"] != null)
+                {
+                        <ul class="nav navbar-nav" style="padding:7px 0">
+                            <li class="divider-vertical"></li>
+                            <li><a href="/Home/FormApp" id="_Home_TrangChu_GET_HUTECH_/SinhVien/NopDon_Home__GET_NỘP ĐƠN TRỰC TUYẾN_">NỘP ĐƠN TRỰC TUYẾN</a></li>
+                            <li>
+                                <p style="color:white; margin-top:15px">@Session["Tensinhvien"]</p>
+                            </li>
+                            <li>
+                                <button type="button" style="margin-top:7px" class="btn btn-custom" id="btnLogout" data-toggle="modal" data-target="#logout"><a style="color:white" href="/User/Logout">Đăng xuất</a></button>
+                            </li>
+                        </ul>
+                    }
+                </div>
+                <div class="navbar-right">
+                    @if (Session["Tensinhvien"] == null)
+                {
+                        <ul class="nav navbar-nav" style="padding:7px 0">
+                            <li class="divider-vertical"></li>
+                            <li><a style="pointer-events: none">NỘP ĐƠN TRỰC TUYẾN</a></li>
+                            <li class="dropdown dropdown-user">
+                                <button type="button" class="btn btn-custom" id="btnLogin" data-toggle="modal" data-target="#login">Đăng nhập</button>
+                                <div id="login" class="modal fade" style="margin-top:50px">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content col-md-10 col-md-offset-1" style="color:black">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <form id="loginForm">
+                                                    <input name="__RequestVerificationToken" type="hidden" value="" />
+                                                    <div class="text-center">
+                                                        <div class="icon-object border-danger-600 text-danger-600"><i class="icon-graduation"></i></div>
+                                                        <h5 class="content-group">Đăng nhập <small class="display-block">Nhập thông tin tài khoản</small></h5>
+                                                    </div>
+                                                    <p>@ViewBag.ThongBao</p>
+                                                    <div class="form-group has-feedback has-feedback-left">
+                                                        <input type="text" name="UserName" id="mssv" class="form-control" placeholder="Mã số sinh viên">
+                                                        <div class="form-control-feedback">
+                                                            <i class="icon-user text-muted"></i>
+                                                        </div>
+                                                        <span class="text-danger" id="mssv-val" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                                                    </div>
+                                                    <div class="form-group has-feedback has-feedback-left">
+                                                        <input type="password" name="Password" id="matkhau" class="form-control" placeholder="Mật khẩu">
+                                                        <div class="form-control-feedback">
+                                                            <i class="icon-lock2 text-muted"></i>
+                                                        </div>
+                                                        <span class="text-danger" id="matkhau-val" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                                    </div>
+                                                    <div class="form-group login-options">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <label class="checkbox-inline">
+                                                                    <input type="checkbox" class="styled">
+                                                                    Nhớ tài khoản
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <script type="text/javascript">
+                                                            function checkForm() {
+                                                                if (document.forms.UserName.value == "") {
+                                                                    alert("Vui lòng nhập tên đăng nhập");
+                                                                    document.forms.UserName.focus();
+                                                                    return false;
+                                                                }
+                                                                if (document.forms.Password.value == "") {
+                                                                    alert("Vui lòng nhập mật khẩu");
+                                                                    document.forms.UserName.focus();
+                                                                    return false;
+                                                                }
+                                                                return true;
+                                                            }
+                                                        </script>
+                                                        <button type="submit" onclick="return checkForm();" class="btn btn-default btn-block">Đăng nhập <i class="icon-arrow-right14 position-right"></i></button>
+                                                    </div>
+
+                                                    <div class="form-group text-center">
+                                                        <a href="#">Quên mật khẩu</a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <script>
+                                    $('#dang-xuat').click(function () {
+
+                                        $('#logoutForm').submit();
+                                    });
+                                </script>
+                            </li>
+                        </ul>
+                    }
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="btn-fixed" style="bottom:120px;right:15px;">
+                <button id="btn-top" style="display:none;" type="button" data-toggle="popover" title="Lên đầu trang" class="btn btn-icon btn-rounded text-white bg-danger"><i class="icon-arrow-up7"></i></button>
+                <script>
+                                    function scrolltop() {
+                                        var id_button = '#btn-top';
+                                        var offset = 220;
+                                        var duration = 500;
+                                        jQuery(window).scroll(function () {
+                                            if (jQuery(this).scrollTop() > offset) {
+                                                jQuery(id_button).fadeIn(duration);
+                                            } else {
+                                                jQuery(id_button).fadeOut(duration);
+                                            }
+                                        });
+                                        jQuery(id_button).click(function (event) {
+                                            event.preventDefault();
+                                            jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                                            return false;
+                                        });
+                                    }
+                                    scrolltop();
+                </script>
+            </div>
+            <div class="btn-fixed" style="bottom:75px;right:15px;">
+                <a href="/" data-toggle="popover" title="Về trang chủ" class="btn btn-icon text-white bg-blue btn-rounded"><i class="icon-home2"></i></a>
+            </div>
+            <div class="page-container">
+                <div class="page-content">
+                    <link rel="stylesheet" type="text/css" href="~/Assets/Client/LAYOUT/Content/CSS/TrangChu.css">
+                    <link rel="stylesheet" type="text/css" href="~/Assets/Client/LAYOUT/Content/IsLoading/style.css">
+
+                    <!--Phần RenderBody-->
+                    @RenderBody()
+
+
+                    <script type="text/javascript" async>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.0";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }
+                                        (document, 'script', 'facebook-jssdk'));
+                    </script>
+                    <script type="text/javascript" async>
+                                    (function () {
+                                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                        po.src = 'https://apis.google.com/js/platform.js';
+                                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                    })();
+                    </script>
+
+                </div>
+                <!--End page-content-->
+            </div>
+            <!--End page-container-->
+        </div>
+
+    <!--Footer-->
+        <div class="footer">
+            <div class="col-md-12">
+                <div class="col-md-2 text-right">
+                    <ul style="padding-right:10px">
+                        <li><a href="/">Trang chủ</a></li>
+                        <li><a href="/">Phòng Đào tạo - Khảo thí</a></li>
+                        <li><a href="/">Hệ thống học tập</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-right">
+                    <ul style="padding-right:10px">
+                        <li><a href="#">Thông báo chung</a></li>
+                        <li><a href="#">Thông báo cá nhân</a></li>
+                        <li><a href="/BieuDo/XyLy">Sơ đồ học tập</a></li>
+                        <li><a href="/TuVan/TuVan">Tư vấn học tập</a></li>
+                        <li><a href="/TuVan/ThongTinSV">Thông tin cá nhân</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div>
+                        <a href="/"><img class="img-responsive logo-hutech" src="~/Assets/Client/LAYOUT/asset_picture_TrangChu/Footer/logo hutech.png" /> </a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-left">
+                    <ul style="padding-left:10px">
+                        <li>Phòng Đào tạo - Khảo thí</li>
+                        <li>Trường ĐH Công nghệ Tp.HCM</li>
+                        <li>475A Điện Biên Phủ, P.25, Q.Bình Thạnh</li>
+                        <li>Thành phố Hồ Chí Minh</li>
+                        <li>Việt Nam</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 text-left">
+                    <ul style="padding-left:10px">
+                        <li>ĐT: (08) 3512 0782</li>
+                        <li>Fax: (08) 3512 0784</li>
+                        <li>daotao@hutech.edu.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/hutech.edu.vn/" title="Facebook">
+                            <i class="icon-facebook2" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCOg9cfIS_KZidN4yP8M4wOQ" title="YouTube"><i class="icon-youtube3" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <label class="copyright">©2016 The University of Hutech</label>
+            </div>
+        </div>
+    }
+    <!--End footer-->
+</body>
+</html>

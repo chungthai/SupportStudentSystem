@@ -1,0 +1,259 @@
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\ApplicationInsights.config
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\csc.exe
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\System.Collections.Immutable.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\vbc.exe
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\VBCSCompiler.exe
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\roslyn\VBCSCompiler.exe.config
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.dll.config
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.pdb
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Antlr3.Runtime.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.SqlServer.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Web.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.WindowsServer.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.ApplicationInsights.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Google.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Web.Infrastructure.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Newtonsoft.Json.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Owin.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Helpers.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Mvc.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Optimization.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Razor.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Deployment.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Razor.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\WebGrease.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Web.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.WindowsServer.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.ApplicationInsights.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Helpers.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Mvc.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Optimization.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Razor.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Deployment.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Razor.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Antlr3.Runtime.pdb
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Newtonsoft.Json.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.SqlServer.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Google.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.csprojResolveAssemblyReference.cache
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.dll
+c:\users\chung thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.pdb
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\ApplicationInsights.config
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\csc.exe
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\System.Collections.Immutable.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\System.Reflection.Metadata.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\vbc.exe
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\VBCSCompiler.exe
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\roslyn\VBCSCompiler.exe.config
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.dll.config
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.pdb
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Antlr3.Runtime.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.SqlServer.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Agent.Intercept.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.DependencyCollector.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Web.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.WindowsServer.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.ApplicationInsights.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Core.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Cookies.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Facebook.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Google.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.OAuth.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Twitter.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Web.Infrastructure.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Newtonsoft.Json.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Owin.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Helpers.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Mvc.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Optimization.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Razor.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Deployment.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Razor.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\WebGrease.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.DependencyCollector.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Web.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.WindowsServer.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.ApplicationInsights.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Helpers.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Mvc.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Optimization.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Razor.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Deployment.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Razor.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Antlr3.Runtime.pdb
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Newtonsoft.Json.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.SqlServer.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Core.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Facebook.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Cookies.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.OAuth.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Google.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Twitter.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.pdb
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.csproj.CoreCompileInputs.cache
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\PagedList.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\PagedList.Mvc.dll
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\PagedList.xml
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\bin\PagedList.Mvc.xml
+C:\Users\Chung Thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\PagedList.dll
+C:\Users\Chung Thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\PagedList.Mvc.dll
+C:\Users\Chung Thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\PagedList.xml
+C:\Users\Chung Thai\documents\visual studio 2015\Projects\SupportStudentSystem\SupportStudentSystem\bin\PagedList.Mvc.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\ApplicationInsights.config
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\csc.exe
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\vbc.exe
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.dll.config
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\SupportStudentSystem.pdb
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Antlr3.Runtime.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Web.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Newtonsoft.Json.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Owin.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\PagedList.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\PagedList.Mvc.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Helpers.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Mvc.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Optimization.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Razor.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\WebGrease.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.Web.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\PagedList.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\PagedList.Mvc.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Helpers.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Mvc.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Optimization.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.Razor.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Antlr3.Runtime.pdb
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Newtonsoft.Json.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.csprojResolveAssemblyReference.cache
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.dll
+C:\Users\Chung Thai\Downloads\SupportStudentSystem (1)\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.pdb
+E:\IT\DACN\SupportStudentSystem\SupportStudentSystem\obj\Debug\SupportStudentSystem.csprojResolveAssemblyReference.cache

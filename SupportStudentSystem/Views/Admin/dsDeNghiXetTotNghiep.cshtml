@@ -1,0 +1,80 @@
+﻿@using SupportStudentSystem.Models;
+@using PagedList.Mvc;
+@model PagedList.PagedList<SupportStudentSystem.Models.DonDeNghiXetTotNghiep>
+
+@{
+    ViewBag.Title = "dsDeNghiXetTotNghiep";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center">DANH SÁCH SINH VIÊN ĐỀ NGHỊ XÉT TỐT NGHIỆP</h2>
+
+
+<table class="table">
+    <tr>
+        <th class="col-sm-2" style="text-align:center">
+            Mã đơn
+        </th>
+
+        <th class="col-sm-2" style="text-align:center">
+            CC Tiếng Anh
+        </th>
+
+        <th class="col-sm-2" style="text-align:center">
+            CC Tin học
+        </th>
+
+        <th class="col-sm-2" style="text-align:center">
+            CC Ngắn hạn 1
+        </th>
+
+        <th class="col-sm-2" style="text-align:center">
+            CC Ngắn hạn 2
+        </th>
+
+        <th class="col-sm-2" style="text-align:center">
+            Chức năng
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="col-sm-2" style="text-align:center">
+                @Html.DisplayFor(modelItem => item.DonTuID)
+            </td>
+
+            <td class="col-sm-2" style="text-align:center">
+                @Html.DisplayFor(modelItem => item.SoHieu_CCTA)
+            </td>
+
+            <td class="col-sm-2" style="text-align:center">
+                @Html.DisplayFor(modelItem => item.SoHieu_CCTH)
+            </td>
+
+            <td class="col-sm-2" style="text-align:center">
+                @Html.DisplayFor(modelItem => item.SoHieu_CCNH1)
+            </td>
+
+            <td class="col-sm-2" style="text-align:center">
+                @Html.DisplayFor(modelItem => item.SoHieu_CCNH2)
+            </td>
+
+            <td class="col-sm-2" style="text-align:center">
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount;
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, Page => Url.Action("dsDeNghiXetTotNghiep_CCNN", new { Page = Page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>

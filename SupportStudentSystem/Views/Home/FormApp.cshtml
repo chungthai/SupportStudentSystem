@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewBag.Title = "FormApp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-container">
+    <div class="page-content">
+        <script type="text/javascript" src="/assets/js/plugins/forms/selects/select2.min.js"></script>
+        <script type="text/javascript" src="/assets/js/plugins/forms/styling/uniform.min.js"></script>
+        <script type="text/javascript" src="/assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+        <script type="text/javascript" src="/assets/js/plugins/forms/validation/validate.min.js"></script>
+        <div class="container content apply-content" style="padding-bottom:10%">
+            <div class="panel panel-white col-lg-10 col-lg-offset-1">
+                <div class="tabbable">
+                    <ul id="header-tab" class=" nav nav-tabs nav-tabs-bottom">
+                        <li class="active">
+                            <a id="don" name="heading" href="#bottom-tab1" data-toggle="tab" aria-expanded="true" style="color: rgb(3, 155, 229);width:100%; height:10%;padding-left:20%">DANH SÁCH ĐƠN</a>
+                        </li>
+                        <li>
+                            <a name="heading" href="#bottom-tab2" data-toggle="tab" style="color: black; width:100%; height:10%;padding-left:15%">DANH SÁCH PHIẾU</a>
+                        </li>
+                        <li>
+                            <a id="ls" name="heading" href="#bottom-tab3" data-toggle="tab" style="color: black;width:100%; height:10%;padding-left:15%">LỊCH SỬ HOẠT ĐỘNG</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="active" id="bottom-tab1">
+                            <!--Left-->
+                            <div class="panel panel-white no-border-radius col-lg-6">
+                                <ul class="media-list media-list-linked">
+                                    <!---->
+                                    <li class="media border-bottom-blue row application">
+                                        <div style="min-height:72px" class="media-link cursor-pointer">
+                                            <div class="media-left text-blue">
+                                                <span class="label label-flat label-rounded label-icon border-blue text-blue-600">
+                                                    <i class=" icon-pencil6"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body" data-toggle="collapse" data-target="#dondenghixettotnghiep">
+                                                <div><b>Đơn đề nghị xét tốt nghiệp</b></div>
+                                                <div>(Có 2 đơn đang chờ giải quyết)</div>
+                                            </div>
+                                            <div id="dondenghixettotnghiep" class="collapse hide-div" style="padding-bottom:8%">
+                                                <ul class="list-extended list-unstyled list-icons">
+                                                    <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                    <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                    <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                    <li class="row">
+                                                        <div class="form-group col-lg-5"><a class="btn btn-primary" href="/Home/ThongTinSinhVien" onclick="taiNoiDung('DonDeNghiXetTotNghiep','ĐƠN ĐỀ NGHỊ XÉT TỐT NGHIỆP')">Nộp đơn Online</a> </div>
+                                                        <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2133-maudonxinchuyencathi.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!---->
+                                    <!---->
+                                    <li class="media border-bottom-blue row application">
+                                        <div style="min-height:72px" class="media-link cursor-pointer">
+                                            <div class="media-left text-blue">
+                                                <span class="label label-flat label-rounded label-icon border-blue text-blue-600">
+                                                    <i class=" icon-pencil6"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body" data-toggle="collapse" data-target="#donchuyencathi">
+                                                <div style="text-align:left"><b>Đơn xin chuyển ca thi</b></div>
+                                                <div><br /></div>
+                                            </div>
+                                            <div id="donchuyencathi" class="collapse hide-div">
+                                                <ul class="list-extended list-unstyled list-icons">
+                                                    <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                    <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                    <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                    <li class="row">
+                                                        <div class="form-group col-lg-5"><a class="btn btn-primary" onclick="taiNoiDung('DonDeNghiXetTotNghiep','ĐƠN ĐỀ NGHỊ XÉT TỐT NGHIỆP')">Nộp đơn Online</a> </div>
+                                                        <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2133-maudonxinchuyencathi.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!---->
+                                </ul>
+                            </div>
+                            <!--/Left-->
+                            <!--Right-->
+                            <div class="panel panel-white no-border-radius col-lg-6">
+                                <ul class="media-list media-list-linked">
+                                    <!---->
+                                    <li class="media border-bottom-blue row application">
+                                        <div style="min-height:72px" class="media-link cursor-pointer">
+                                            <div class="media-left text-blue">
+                                                <span class="label label-flat label-rounded label-icon border-blue text-blue-600">
+                                                    <i class=" icon-pencil6"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body" data-toggle="collapse" data-target="#donxindiemi">
+                                                <div><b>Đơn xin điểm I</b></div>
+                                                <div><br /></div>
+                                            </div>
+                                            <div id="donxindiemi" class="collapse hide-div" style="padding-bottom:8%">
+                                                <ul class="list-extended list-unstyled list-icons">
+                                                    <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                    <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                    <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                    <li class="row">
+                                                        <div class="form-group col-lg-5"><a href="/Home/ThongTinSinhVienDiemI" class="btn btn-primary" onclick="taiNoiDung('DonDeNghiXetTotNghiep','ĐƠN ĐỀ NGHỊ XÉT TỐT NGHIỆP')">Nộp đơn Online</a> </div>
+                                                        <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2133-maudonxinchuyencathi.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!---->
+                                    <!---->
+                                    <li class="media border-bottom-blue row application">
+                                        <div style="min-height:72px" class="media-link cursor-pointer">
+                                            <div class="media-left text-blue">
+                                                <span class="label label-flat label-rounded label-icon border-blue text-blue-600">
+                                                    <i class=" icon-pencil6"></i>
+                                                </span>
+                                            </div>
+                                            <div class="media-body" data-toggle="collapse" data-target="#donxinxoadiemi">
+                                                <div><b>Đơn xin xóa điểm I</b></div>
+                                                <div><br /></div>
+                                            </div>
+                                            <div id="donxinxoadiemi" class="collapse hide-div" style="padding-bottom:8%">
+                                                <ul class="list-extended list-unstyled list-icons">
+                                                    <li><i class="icon-pushpin position-left"></i><u>Mô tả</u>: </li>
+                                                    <li><i class="icon-clipboard2 position-left"></i><u>Thời hạn giải quyết</u>: Trong vòng 7 ngày</li>
+                                                    <li><i class="icon-blocked position-left"></i><u>Thời hạn hủy đơn</u>: 3 ngày kể từ ngày nộp đơn</li>
+                                                    <li class="row">
+                                                        <div class="form-group col-lg-5"><a href="~/Home/DonXoaDiemI" class="btn btn-primary" onclick="taiNoiDung('DonDeNghiXetTotNghiep','ĐƠN ĐỀ NGHỊ XÉT TỐT NGHIỆP')">Nộp đơn Online</a> </div>
+                                                        <div class="col-lg-5"><a href="http://webdaotao.hutech.edu.vn/daotao/docalls/hutech-2133-maudonxinchuyencathi.doc" class="btn btn-primary">Tải mẫu đơn</a> </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!---->
+                                </ul>
+                            </div>
+                            <!--/Right-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,253 @@
+﻿
+@{
+    ViewBag.Title = "DonXetTotNghiep";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-container">
+    <div class="page-content">
+        <div class="container content apply-content">
+            <div class="panel panel-white col-lg-10 col-lg-offset-1">
+                <div class="tabbable">
+                    <ul id="header-tab" class=" nav nav-tabs nav-tabs-bottom">
+                        <li class="active">
+                            <a id="don" name="heading" href="#bottom-tab1" data-toggle="tab" aria-expanded="true" style="color: rgb(3, 155, 229);width:100%; height:10%;padding-left:20%">ĐƠN XÉT TỐT NGHIỆP</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="panel panel-white">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center text-blue-800" style="line-height:50px" id="tieuDe">ĐƠN XIN ĐỀ NGHỊ XÉT TỐT NGHIỆP</h3>
+                            </div>
+                            <ul id="stepy-07866542023465017-header" class="stepy-header">
+                                <li id="stepy-07866542023465017-head-0" class="stepy-active" style="cursor: default;">
+                                    <div>1</div>
+                                    <span>Thông tin cá nhân</span>
+                                </li>
+                                <li id="stepy-07866542023465017-head-1" style="cursor: default;">
+                                    <div>2</div>
+                                    <span>Thông tin xét tốt nghiệp</span>
+                                </li>
+                                <li id="stepy-07866542023465017-head-2" style="cursor: default;">
+                                    <div>3</div>
+                                    <span>Xác nhận thông tin</span>
+                                </li>
+                            </ul>
+                            <form class="stepy-validation" method="post" action="#" id="stepy-07866542023465017">
+                                <fieldset title="2" id="stepy-575925073575752-step-1" class="stepy-step" style="display: block;">
+                                    <hr>
+                                    <div class="col-md-12">
+                                        <p><b class="text-danger"><u>Lưu ý</u></b>: Các mục có hoa thị (<span class="text-danger">*</span>) bắt buộc phải nhập.</p>
+                                        <hr>
+                                    </div>
+                                    <legend style="display: none;">Thông tin xét tốt nghiệp</legend>
+                                    <div class="col-md-10 col-md-offset-1"><label><b>Lý do chưa được xét tốt nghiệp đúng hạn</b> <sup>(<span class="text-danger">*</span>)</sup>@ViewData["Loi1"]</label></div>
+                                    <div class="col-md-10 col-md-offset-1 well mb-10">
+                                        <div class="col-md-12">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="tntruochen" class="styled" name="tntruochen" value="Tốt nghiệp trước hẹn">
+                                                    Tốt nghiệp trước hẹn.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="nohocphan" class="styled" name="nohocphan" value="Nợ học phần">
+                                                    Nợ học phần.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="caithiendiem" class="styled" name="caithiendiem" value="Cải thiện điểm">
+                                                    Cải thiện điểm.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" id="thieuchungchi" name="thieuchungchi" class="styled chung-chi" value="Thiếu chứng chỉ">
+                                                    Thiếu chứng chỉ.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <div data-toggle="collapse" data-target="#lydo">
+                                                    <label>
+                                                        <input type="checkbox" id="lydokhac" name="" class="styled">
+                                                        Khác.
+                                                    </label>
+                                                </div>
+                                                <div id="lydo" class="col-md-12 collapse">
+                                                    <div class="col-md-8">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" name="lydokhac" rows="2" data-toggle="popover" title="" data-placement="top" data-trigger="focus" data-original-title="Lý do khác của bạn là gì?"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="LyDo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10 col-md-offset-1"><label><b>Chứng chỉ</b> <sup>(<span class="text-danger">*</span>)</sup></label></div>
+                                    <div class="col-md-12 well mb-12">
+                                        <div>
+                                            <p style="color:red">@ViewData["Loi2"]</p>
+                                            <p style="color:red">@ViewData["Loi3"]</p>
+                                            <p style="color:red">@ViewData["Loi4"]</p>
+                                            <p style="color:red">@ViewData["Loi5"]</p>
+                                        </div>
+                                        <div class="">
+                                            <div class="col-md-3">
+                                                <label>Chứng chỉ ngoại ngữ <sup>(<span class="text-danger">*</span>)</sup></label>
+
+                                                <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="CCNN">
+                                                    <option></option>
+                                                    <option>CC tiếng Anh B</option>
+                                                    <option>CC tiếng Anh B1 quốc tế</option>
+                                                    <option>CC tiếng anh Quốc tế</option>
+                                                    <option>CC tiếng Nhật</option>
+                                                    <option>CC tiếng Hoa</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>Số hiệu<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                <input type="text" class="form-control" name="soHieuNN">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>Số vào sổ<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                <input type="text" class="form-control" name="soVaoSoNN">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>Ngày cấp<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                <input type="datetime" class="form-control" name="ngayCapNN">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Minh Chứng<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                <label class="btn btn-default btn-file">
+                                                    Ảnh minh chứng
+                                                    <input type="file" name="minhChungNN">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p style="color:red">@ViewData["Loi14"]</p>
+                                            <p style="color:red">@ViewData["Loi15"]</p>
+                                            <p style="color:red">@ViewData["Loi16"]</p>
+                                            <p style="color:red">@ViewData["Loi17"]</p>
+                                        </div>
+                                        <div class="">
+                                            <div class="col-md-3">
+                                                <label>Chứng chỉ tin học <sup>(<span class="text-danger">*</span>)</sup></label>
+                                                <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="CCTH">
+                                                    <option></option>
+                                                    <option>CC tin học B Quốc gia</option>
+                                                    <option>CC CNNT nâng cao</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>Số hiệu<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                <input type="text" class="form-control" name="soHieuTH">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>Số vào sổ<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                <input type="text" class="form-control" name="soVaoSoTH">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>Ngày cấp<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                <input type="datetime" class="form-control" name="ngayCapTH">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Minh Chứng</label>
+                                                <label class="btn btn-default btn-file">
+                                                    Ảnh minh chứng
+                                                    <input type="file" name="minhChungTH">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p style="color:red">@ViewData["Loi6"]</p>
+                                            <p style="color:red">@ViewData["Loi7"]</p>
+                                            <p style="color:red">@ViewData["Loi8"]</p>
+                                            <p style="color:red">@ViewData["Loi9"]</p>
+                                        </div>
+                                        <div class="">
+                                            <div class="">
+                                                <div class="col-md-3">
+                                                    <label>Chứng chỉ TH ngắn hạn 1 <sup>(<span class="text-danger">*</span>)</sup></label>
+
+                                                    <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="CCNH1">
+                                                        <option></option>
+                                                        <option>CC ngắn hạn 1</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Số hiệu<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                    <input type="text" class="form-control" name="soHieuNH1">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Số vào sổ<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                    <input type="text" class="form-control" name="soVaoSoNH1">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Ngày cấp<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                    <input type="datetime" class="form-control" name="ngayCapNH1">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Minh Chứng</label>
+                                                    <label class="btn btn-default btn-file">
+                                                        Ảnh minh chứng
+                                                        <input type="file" name="minhChungNH1">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                            <div>
+                                                <p style="color:red">@ViewData["Loi10"]</p>
+                                                <p style="color:red">@ViewData["Loi11"]</p>
+                                                <p style="color:red">@ViewData["Loi12"]</p>
+                                                <p style="color:red">@ViewData["Loi13"]</p>
+                                            </div>
+                                            <div class="">
+                                                <div class="col-md-3">
+                                                    <label>Chứng chỉ TH ngắn hạn 2 <sup>(<span class="text-danger">*</span>)</sup></label>
+
+                                                    <select class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="CCNH2">
+                                                        <option></option>
+                                                        <option>CC ngắn hạn 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Số hiệu<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                    <input type="text" class="form-control" name="soHieuNH2">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Số vào sổ<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                    <input type="text" class="form-control" name="soVaoSoNH2">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>Ngày cấp<sup>(<span class="text-danger">*</span>)</sup></label>
+                                                    <input type="datetime" class="form-control" name="ngayCapNH2">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Minh Chứng</label>
+                                                    <label class="btn btn-default btn-file">
+                                                        Ảnh minh chứng
+                                                        <input type="file" name="minhChungNH2">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stepy-navigator">
+                                        <a href="/Home/ThongTinSinhVien" class="button-back btn btn-default"><i class="icon-arrow-left13 position-left"></i> Quay lại</a>
+                                        <a href="/Home/XacNhanThongTin"><input type="submit" id="btn" value="Tiếp theo" class="button-next btn btn-primary"> @*<i class="icon-arrow-right14 position-right"></i>*@</a>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
